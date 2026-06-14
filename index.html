@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sebastianjump.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-page">
+    <section class="game-shell" aria-label="Baby Cheese Jump game">
+      <div class="hud">
+        <div>
+          <p class="label">Score</p>
+          <p class="value" id="scoreText">0</p>
+        </div>
+        <h1>Sebastian Jump</h1>
+        <div>
+          <p class="label">High Score</p>
+          <p class="value" id="highScoreText">0</p>
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="A baby jumping over cheese in a jungle"></canvas>
+        <div class="game-menu" id="gameMenu">
+          <button id="startButton" type="button">Start</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="jump-button" id="jumpButton" type="button" aria-label="Jump">&#8593;</button>
+        <button class="reset-button" id="resetHighScoreButton" type="button">Reset High Score</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
